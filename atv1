@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main()
+{
+
+    setlocale(LC_ALL, "portuguese");
+
+    int temperatura;
+
+    printf("bem vindo ao jogo!\n");
+
+    printf("digite a temperatura:");
+    scanf("%d", &temperatura);
+
+    if (temperatura > 25)
+    {
+        printf("ensolarado");
+    }
+    else if (temperatura < 15)
+    {
+        printf("chuvoso");
+    }
+    else if (temperatura >= 15 || temperatura <= 25)
+    {
+        printf("nublado");
+    }
+
+    else
+    {
+        printf("opção inválida");
+    }
+    return 0;
+}
