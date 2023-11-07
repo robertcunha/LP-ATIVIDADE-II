@@ -28,7 +28,7 @@ int main()
     case 1:
         resultado = numeroUm + numeroDois;
         break;
-        case 2 : resultado = numeroUm + numeroDois;
+        case 2 : resultado = numeroUm - numeroDois;
         break;
     default:
         printf("opÃ§Ã£o invalida");
