@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <locale.h>
+
+int main(){
+    setlocale(LC_ALL, "portuguese");
+
+    int codigo;
+
+    printf("\nBEM VINDO A NOSSA LOJA! O QUE DESEJA COMPRAR?\n");
+    printf("\n 1 - camiseta - 2 - calça 3 - sapato");
+
+    printf("\ndigite sua preferência:\n");
+    scanf("%d",&codigo);
+    system("clear || cls");
+
+    fflush (stdin);
+
+    switch (codigo)
+    {
+    case 1:
+        printf("camiseta - 25 Reais");
+        break;
+    
+    case 2:
+    printf("calça - 30 Reais");
+        break;
+     
+     case 3:
+     printf("sapato - 35 Reais");
+     default:
+    break;
+
+    }
+    return 0;
+}
